@@ -13,7 +13,5 @@ def long_planeteer_calls(long)
 end
 
 def find_the_cheese(cheese)
-  cheese.split(", ")
-    cheese.detect {|type| type.include?("cheddar", "gouda", "camenbert")}
-  end
+  cheese.detect {|type| type.include?("cheddar", "gouda", "camenbert")}
 end
