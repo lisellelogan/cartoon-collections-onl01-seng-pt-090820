@@ -7,12 +7,8 @@ def summon_captain_planet(calls)
 end
 
 def long_planeteer_calls(long)
-  long.map do |word|
-    if word.length > 4
-      true
-    else
-      false
-    end
+  long.map.any? do |word|
+    word.length > 4
   end
 end
 
